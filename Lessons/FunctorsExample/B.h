@@ -3,8 +3,11 @@
 class B
 {
     public:
-        int operator()(int x)
+        int operator()(int val)
         {
-            return -x;
+            x = val;
+            return -val;
         }
+
+        int x;
 };
